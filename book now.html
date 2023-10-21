@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>Hotel DJERBA - Book NOW</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input, select {
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Centered buttons */
+        #centered-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #centered-buttons button {
+            margin: 0 10px;
+        }
+        
+Certainly, you can add a footer to your HTML page with social media links inside it. Here's the updated code with a footer and sample social media links:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input, select {
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Centered buttons */
+        #centered-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #centered-buttons button {
+            margin: 0 10px;
+        }
+
+        /* Custom CSS for the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .social-icons {
+            font-size: 24px;
+        }
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Your Room</h1>
+    </header>
+    <main>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <label for="room">Room:</label>
+            <select id="room" required>
+                <option value="Room 1" data-price="100">Room 1 - $100/night</option>
+                <option value="Room 2" data-price="150">Room 2 - $150/night</option>
+                <option value="Room 3" data-price="120">Room 3 - $120/night</option>
+                <option value="Room 4" data-price="90">Room 4 - $90/night</option>
+                <option value="Room 5" data-price="110">Room 5 - $110/night</option>
+                <option value="Room 6" data-price="130">Room 6 - $130/night</option>
+            </select>
+
+            <label for="nights">Number of Nights:</label>
+            <input type="number" id="nights" required min="1">
+
+            <div id="total-price">Total Price: $0</div>
+        </form>
+
+        <!-- "Add Another Room" and "Submit" buttons centered -->
+        <div id="centered-buttons">
+            <button type="button" id="add-room">Add Another Room</button>
+            <button type="button" id="submit-button">Submit</button>
+        </div>
+
+        <div id="booking-summary"></div>
+    </main>
+    
+    <!-- Footer with Social Media Links -->
+    <footer>
+        <p>&copy; 2023 Hotel DJERBA. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Moatassemkouz99" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/DevGenius_" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/moatassem_kouz99" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/moatassemkouz99/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const addRoomButton = document.getElementById("add-room");
+            const submitButton = document.getElementById("submit-button");
+            const nightsInput = document.getElementById("nights");
+            const dateInput = document.getElementById("date");
+            const timeInput = document.getElementById("time");
+            const totalPriceDisplay = document.getElementById("total-price");
+            const bookingSummary = document.getElementById("booking-summary");
+
+            const bookings = [];
+            let totalBookingPrice = 0;
+
+            function updateTotalPrice() {
+                const room = document.getElementById("room");
+                const selectedRoom = room.options[room.selectedIndex];
+                const nights = parseInt(nightsInput.value);
+
+                const roomPrice = parseFloat(selectedRoom.getAttribute("data-price"));
+                const totalPrice = roomPrice * nights;
+                totalPriceDisplay.textContent = `Total Price: $${totalBookingPrice + totalPrice}`;
+            }
+
+            nightsInput.addEventListener("input", updateTotalPrice);
+
+            function resetForm() {
+                nightsInput.value = "";
+                totalPriceDisplay.textContent = "Total Price: $0";
+            }
+
+            function updateBookingSummary() {
+                if (bookings.length > 0) {
+                    bookingSummary.innerHTML = "<strong>Booking Summary:</strong><br>";
+                    let totalNights = 0;
+
+                    bookings.forEach((booking, index) => {
+                        const reservationNumber = index + 1;
+                        const roomSelect = document.getElementById("room");
+                        const roomIndex = roomSelect.selectedIndex;
+                        const roomOption = roomSelect.options[roomIndex];
+                        const roomPrice = parseFloat(roomOption.getAttribute("data-price"));
+
+                        bookingSummary.innerHTML += `Reservation ${reservationNumber}: ${booking.room}, ${booking.nights} nights<br>`;
+                        totalNights += booking.nights;
+                    });
+
+                    bookingSummary.innerHTML += `<strong>Total Nights:</strong> ${totalNights} nights<br>`;
+                    bookingSummary.innerHTML += `<strong>Total Price:</strong> $${totalBookingPrice}`;
+                } else {
+                    bookingSummary.innerHTML = "No room bookings added yet.";
+                }
+            }
+
+            function isFutureDateTime(dateStr, timeStr) {
+                const selectedDate = new Date(dateStr + "T" + timeStr);
+                const currentDate = new Date();
+
+                return selectedDate > currentDate;
+            }
+
+            addRoomButton.addEventListener("click", function () {
+                const room = document.getElementById("room");
+                const selectedRoom = room.options[room.selectedIndex].text;
+                const nights = parseInt(nightsInput.value);
+                const date = dateInput.value;
+                const time = timeInput.value;
+
+                if (selectedRoom && nights > 0 && isFutureDateTime(date, time)) {
+                    const roomPrice = parseFloat(room.options[room.selectedIndex].getAttribute("data-price"));
+                    const totalPrice = roomPrice * nights;
+
+                    bookings.push({ room: selectedRoom, nights: nights, totalPrice: totalPrice });
+                    totalBookingPrice += totalPrice;
+
+                    updateBookingSummary();
+                    resetForm();
+                } else {
+                    alert("Please select a valid room, specify the number of nights, and ensure the date and time are in the future.");
+                }
+            });
+
+            submitButton.addEventListener("click", function () {
+                if (bookings.length > 0) {
+                    const name = document.getElementById("name").value;
+                    const date = dateInput.value;
+                    const time = timeInput.value;
+
+                    const bookingDetails = bookings.map(booking => `${booking.room} for ${booking.nights} nights`).join(", ");
+                    const message = `Thank you, ${name}! Your bookings for ${bookingDetails} starting on ${date} at ${time} have been registered. Total Price: $${totalBookingPrice}`;
+                    alert(message);
+                } else {
+                    alert("You haven't added any room bookings. Please use 'Add Another Room' to make a booking.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
