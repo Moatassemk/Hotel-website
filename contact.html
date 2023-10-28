@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Dobro dosli u najbolji kafic na svetu">
-    <meta name="keywords" content="Kafic">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <title>Hotel DJERBA - Feedback</title>
     <style>
         body {
             margin: 0;
-            overflow: hidden;
+            overflow: auto;
             background-color: #333;
         }
 
@@ -87,9 +85,79 @@
             justify-content: center; /* Center horizontally */
             height: 150px; /* Adjust the height as needed */
         }
+        .container1 {
+            margin: auto;
+            max-width: 1100px;
+            overflow: auto;
+            padding: 0 20px;
+        }
+
+        #navbar {
+            background: #333;
+            color: #fff;
+            overflow: auto;
+        }
+
+        #navbar a {
+            color: #fff;
+        }
+
+        #navbar h1 {
+            float: left;
+        }
+
+        #navbar ul {
+            list-style: none;
+            float: right;
+        }
+
+        #navbar ul li {
+            float: left;
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #navbar ul li a:hover,
+        #navbar ul li a.current {
+            background: #444;
+            color: #f7c08a;
+        }
+        footer {
+              background-color: #333;
+              color: #fff;
+              text-align: center;
+              padding: 20px 0;
+        }
+        .social-icons {
+            font-size: 24px;
+        }
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav id="navbar">
+        <div class="container1">
+                <h1 class="attractive-heading">
+                    <img src="./img/icon1.png" alt="DJERBA hotel" width="100" height="80">
+                </h1>                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a class="current"href="contact.html">Feedback</a></li>
+                    <li><a href="book now.html">Book NOW</a></li>
+
+                </ul>
+              </div>
+            </nav>  
+    </header>
     <div id="image-container">
         <img src="./img/icon1.png" alt="Djerba hotel">
     </div>
@@ -113,6 +181,15 @@
             <p>Thank you for your valuable feedback!</p>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2023 Hotel DJERBA. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/Moatassemkouz99" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com/DevGenius_" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/moatassem_kouz99" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/moatassemkouz99/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
      <script>
          particlesJS("particles-js", {
